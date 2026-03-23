@@ -18,13 +18,17 @@
         <button id="apply-now" type="button">Apply now</button>
         <button id="open-options" class="primary" type="button">Open rules</button>
       </div>
-      <div class="actions">
-        <button id="show-log" type="button">Show log</button>
-        <button id="clear-log" type="button">Clear log</button>
-        <button id="copy-log" type="button">Copy log</button>
-      </div>
       <p id="popup-message" class="message" aria-live="polite"></p>
-      <pre id="log-output" style="display:none;max-height:260px;overflow-y:auto;font-size:11px;background:#f4f4f4;padding:6px;margin:6px 0 0;white-space:pre-wrap;word-break:break-all;"></pre>
+
+      <details class="debug-section">
+        <summary>Debugging</summary>
+        <div class="actions">
+          <button id="show-log" type="button">Show log</button>
+          <button id="clear-log" type="button">Clear log</button>
+          <button id="copy-log" type="button">Copy log</button>
+        </div>
+        <pre id="log-output"></pre>
+      </details>
     </main>
 
     <script src="storage.js"></script>

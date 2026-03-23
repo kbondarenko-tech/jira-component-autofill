@@ -129,3 +129,56 @@ button.danger {
 .empty {
   color: #5e6c84;
 }
+
+.debug-section {
+  margin-top: 14px;
+  border: 1px solid #ebecf0;
+  border-radius: 10px;
+  padding: 0;
+  overflow: hidden;
+}
+
+.debug-section summary {
+  padding: 8px 12px;
+  font-size: 12px;
+  color: #5e6c84;
+  cursor: pointer;
+  user-select: none;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.debug-section summary::before {
+  content: '▶';
+  font-size: 9px;
+  transition: transform 0.15s;
+  display: inline-block;
+}
+
+.debug-section[open] summary::before {
+  transform: rotate(90deg);
+}
+
+.debug-section .actions {
+  padding: 8px 12px 4px;
+}
+
+.debug-section .actions button {
+  font-size: 12px;
+  padding: 6px 10px;
+}
+
+#log-output {
+  display: none;
+  max-height: 260px;
+  overflow-y: auto;
+  font-size: 11px;
+  background: #f4f4f4;
+  padding: 6px 12px;
+  margin: 4px 0 8px;
+  white-space: pre-wrap;
+  word-break: break-all;
+  border-top: 1px solid #ebecf0;
+}

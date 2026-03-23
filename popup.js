@@ -90,10 +90,12 @@
       const lines = response?.log || [];
       logOutput.textContent = lines.length ? lines.join('\n') : '(log is empty)';
       logOutput.style.display = 'block';
+      logOutput.closest('details').open = true;
       logOutput.scrollTop = logOutput.scrollHeight;
     } catch (error) {
       logOutput.textContent = 'Failed to get log: ' + (error.message || error);
       logOutput.style.display = 'block';
+      logOutput.closest('details').open = true;
     }
   }
 
