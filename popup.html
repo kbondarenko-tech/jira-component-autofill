@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Jira Component Autofill</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body class="popup">
+    <main class="panel compact">
+      <h1>Jira Component Autofill</h1>
+      <label class="toggle">
+        <input id="popup-enabled" type="checkbox">
+        <span>Extension enabled</span>
+      </label>
+      <p id="popup-summary" class="hint"></p>
+      <div class="actions">
+        <button id="apply-now" type="button">Apply now</button>
+        <button id="open-options" class="primary" type="button">Open rules</button>
+      </div>
+      <div class="actions">
+        <button id="show-log" type="button">Show log</button>
+        <button id="clear-log" type="button">Clear log</button>
+        <button id="copy-log" type="button">Copy log</button>
+      </div>
+      <p id="popup-message" class="message" aria-live="polite"></p>
+      <pre id="log-output" style="display:none;max-height:260px;overflow-y:auto;font-size:11px;background:#f4f4f4;padding:6px;margin:6px 0 0;white-space:pre-wrap;word-break:break-all;"></pre>
+    </main>
+
+    <script src="storage.js"></script>
+    <script src="popup.js"></script>
+  </body>
+  </html>

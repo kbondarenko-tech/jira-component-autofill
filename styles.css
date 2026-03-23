@@ -1,0 +1,131 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font: 14px/1.45 "Segoe UI", Tahoma, sans-serif;
+  background: #f4f7fb;
+  color: #172b4d;
+}
+
+.page {
+  max-width: 840px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.hero {
+  margin-bottom: 20px;
+}
+
+.hero h1,
+.panel h1,
+.panel h2,
+.rule-card h3 {
+  margin: 0 0 8px;
+}
+
+.panel {
+  background: #ffffff;
+  border: 1px solid #dfe1e6;
+  border-radius: 14px;
+  padding: 18px;
+  margin-bottom: 16px;
+  box-shadow: 0 8px 20px rgba(9, 30, 66, 0.06);
+}
+
+.panel.compact {
+  width: 280px;
+  margin: 0;
+}
+
+.popup {
+  background: #f4f7fb;
+}
+
+.rule-form,
+.rules {
+  display: grid;
+  gap: 14px;
+}
+
+.field {
+  display: grid;
+  gap: 6px;
+}
+
+.field input {
+  width: 100%;
+  border: 1px solid #c1c7d0;
+  border-radius: 10px;
+  padding: 10px 12px;
+  background: #fff;
+}
+
+.field input:focus {
+  outline: 2px solid #0052cc;
+  outline-offset: 1px;
+}
+
+.toggle {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+button {
+  border: 1px solid #c1c7d0;
+  border-radius: 10px;
+  padding: 9px 14px;
+  background: #fff;
+  color: #172b4d;
+  cursor: pointer;
+}
+
+button.primary {
+  border-color: #0052cc;
+  background: #0052cc;
+  color: #fff;
+}
+
+button.danger {
+  border-color: #de350b;
+  color: #de350b;
+}
+
+.hint {
+  margin: 8px 0 0;
+  color: #5e6c84;
+}
+
+.message {
+  min-height: 20px;
+  margin: 10px 0 0;
+  color: #006644;
+}
+
+.message.error {
+  color: #bf2600;
+}
+
+.rule-card {
+  border: 1px solid #ebecf0;
+  border-radius: 12px;
+  padding: 14px;
+  background: linear-gradient(180deg, #ffffff 0%, #fbfcfe 100%);
+}
+
+.rule-card p {
+  margin: 6px 0;
+}
+
+.empty {
+  color: #5e6c84;
+}

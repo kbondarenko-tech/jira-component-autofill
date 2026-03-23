@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "Jira Component Autofill",
+  "version": "1.0.0",
+  "description": "Auto-fills Jira Components in the create issue form based on local Chrome extension rules.",
+  "permissions": ["storage", "activeTab", "tabs", "scripting"],
+  "host_permissions": ["https://*.atlassian.net/*"],
+  "action": {
+    "default_title": "Jira Component Autofill",
+    "default_popup": "popup.html"
+  },
+  "options_page": "options.html",
+  "content_scripts": [
+    {
+      "matches": ["https://*.atlassian.net/*"],
+      "js": ["storage.js", "content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
